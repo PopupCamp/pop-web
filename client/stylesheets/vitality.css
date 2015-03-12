@@ -49,8 +49,9 @@ p {
 }
 p.lead {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 900;
-  text-transform: uppercase;
+  font-weight: 700;
+  text-transform: none;
+  font-style: italic;
   font-size: 24px;
 }
 h1,
@@ -366,12 +367,14 @@ aside.cta-quote span.quote {
 }
 .testimonials .testimonials-carousel .item .testimonial-info .testimonial-img {
   display: inline-block;
-  height: 50px;
-  width: 50px;
+  vertical-align: middle;
+  height: 200px;
+  width: 200px;
   margin-right: 10px;
 }
 .testimonials .testimonials-carousel .item .testimonial-info .testimonial-author {
   display: inline-block;
+  vertical-align: middle;
 }
 .testimonials .testimonials-carousel .item .testimonial-info .testimonial-author .name {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1023,7 +1026,7 @@ body.modern h6 {
 body.modern p.lead {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: none;
 }
 body.modern header .brand-name {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1065,7 +1068,7 @@ body.vintage h6 {
 body.vintage p.lead {
   font-family: "Sanchez", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  text-transform: uppercase;
+  text-transform: none;
 }
 body.vintage header .brand-name {
   font-family: "Sanchez", "Helvetica Neue", Helvetica, Arial, sans-serif;

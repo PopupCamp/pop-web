@@ -2,17 +2,6 @@ Meteor.startup(function() {
   $('body').attr('id', 'page-top');
 });
 
-function scrollPage() {
-  var sy = scrollY();
-  if (sy >= changeHeaderOn) {
-    classie.remove(header, 'navbar-expanded');
-  }
-  else {
-    classie.add(header, 'navbar-expanded');
-  }
-  didScroll = false;
-}
-
 Template.landing.rendered = function() {
   $(window).scroll(function() {
     Session.set("yOffset", window.pageYOffset || document.documentElement.scrollTop)
@@ -107,49 +96,6 @@ Template.landing.rendered = function() {
       target: '.navbar-fixed-top',
       offset: 51
   })
-
-  // Portfolio Filtering Scripts & Hover Effect
-  var filterList = {
-      init: function() {
-
-          // MixItUp plugin
-          // http://mixitup.io
-          $('#portfoliolist').mixitup({
-              targetSelector: '.portfolio',
-              filterSelector: '.filter',
-              effects: ['fade'],
-              easing: 'snap',
-              // call the hover effect
-              onMixEnd: filterList.hoverEffect()
-          });
-
-      },
-
-      hoverEffect: function() {
-          // Simple parallax effect
-          $('#portfoliolist .portfolio').hover(
-              function() {
-                  $(this).find('.caption').stop().animate({
-                      bottom: 0
-                  }, 200, 'easeOutQuad');
-                  $(this).find('img').stop().animate({
-                      top: -20
-                  }, 300, 'easeOutQuad');
-              },
-              function() {
-                  $(this).find('.caption').stop().animate({
-                      bottom: -75
-                  }, 200, 'easeInQuad');
-                  $(this).find('img').stop().animate({
-                      top: 0
-                  }, 300, 'easeOutQuad');
-              }
-          );
-
-      }
-
-  };
-  filterList.init();
 
   return new WOW().init();
 };
