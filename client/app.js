@@ -83,19 +83,17 @@ Template.landing.rendered = function() {
       }
   });
 
-  // Formstone Wallpaper - Video Background Settings
-  $("header.video").wallpaper({
-      source: {
-          poster: "assets/img/bg-mobile-fallback.jpg",
-          mp4: "assets/mp4/camera.mp4"
-      }
-  });
-
   // Scrollspy: Highlights the navigation menu items while scrolling.
   $('body').scrollspy({
       target: '.navbar-fixed-top',
       offset: 51
   })
 
+  $('#portfoliolist').mixItUp();
+
   return new WOW().init();
 };
+
+Template.mytemplate.destroyed=function() {
+  $('#portfoliolist').mixItUp('destroy',true);
+}

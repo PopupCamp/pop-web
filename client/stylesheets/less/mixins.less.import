@@ -23,16 +23,5 @@
 	font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight: 900;
 	text-transform: uppercase;
-}
-
-.heading-font-modern() {
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.heading-font-vintage() {
-    font-family: "Sanchez","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;   
+  color: #fd713b;
 }

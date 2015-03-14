@@ -4,7 +4,7 @@ header {
 	height: auto;
 	width: auto;
 	background-color: @themeDark;
-	background: no-repeat center center; 
+	background: no-repeat center center;
 	background-attachment: scroll;
 	.background-cover;
 	padding: 100px 0;
@@ -15,6 +15,7 @@ header {
 	}
 	.brand-name {
 		.heading-font;
+		color: white;
 		font-size: 55px;
 		line-height: 55px;
 		text-transform: uppercase;
@@ -22,6 +23,7 @@ header {
 		margin-top: 15px;
 	}
 	.brand-name-subtext {
+		color: white;
 		font-size: 20px;
 		line-height: 20px;
 		font-weight: 300;
@@ -57,21 +59,6 @@ header {
 
 @media(min-width:768px) {
 	header {
-		height: 100%;
-		width: 100%;
-		padding: 0;
-		background-attachment: scroll;
-		.intro-content {
-			color: white;
-			text-align: center;
-			width: 50%;
-			margin: auto;
-			position: absolute;
-			top: 50%; left: 50%;
-			-webkit-transform: translate(-50%,-50%);
-			-ms-transform: translate(-50%,-50%);
-			transform: translate(-50%,-50%);
-		}
 		.brand-name {
 			font-size: 80px;
 			line-height: 80px;
@@ -83,37 +70,6 @@ header {
 		img {
 			max-width: 300px;
 			max-height: 300px;
-		}		
-  	}
-}
-
-@media(min-width:1025px) {
-	header {
-		background-attachment: fixed;
-  	}
-}
-
-header.video {
-	.overlay {
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		background: #000;
-		z-index: 998;
-		opacity: 0;
-	}
-	.intro-content {
-		z-index: 999;
-	}
-	.scroll-down {
-		z-index: 999;
-	}
-}
-
-@media(min-width:768px) {
-	header.video {
-		.overlay {
-			opacity: 0.5;
 		}
-	}
+  }
 }
