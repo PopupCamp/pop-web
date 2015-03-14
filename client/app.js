@@ -94,6 +94,6 @@ Template.landing.rendered = function() {
   return new WOW().init();
 };
 
-Template.mytemplate.destroyed=function() {
+Template.landing.destroyed = function() {
   $('#portfoliolist').mixItUp('destroy',true);
 }
