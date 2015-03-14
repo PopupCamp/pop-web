@@ -151,6 +151,11 @@ hr.alternate {
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
+.navbar-default .navbar-brand img,
+.navbar-inverse .navbar-brand img {
+  height: 50px;
+}
+
 .navbar-default .navbar-brand:hover,
 .navbar-inverse .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
