@@ -21,11 +21,33 @@
 
 <body>
   <div id="wrapper">
+    {{> navigation}}
     {{> landing}}
+    {{> footer}}
   </div>
 </body>
 
 <template name="landing">
+  <header style="background-image: url('/img/bg-header.jpg');">
+    <div class="intro-content">
+      <img src="/img/profile.png" class="img-responsive img-centered" alt="">
+      <div class="brand-name">Enfluence</div>
+      <hr class="alternate"/>
+      <div class="brand-name-subtext">Your health is my health</div>
+    </div>
+    <div class="scroll-down">
+      <a class="btn page-scroll" href="#why"><i class="fa fa-angle-down fa-fw"></i></a>
+    </div>
+  </header>
+
+  {{> why}}
+  {{> adapt}}
+  {{> experience}}
+  {{> engage}}
+  {{> connect}}
+</template>
+
+<template name="navigation">
   <!-- Navigation -->
   <!-- Note: navbar-default and navbar-inverse are both supported with this theme. -->
   <nav class="navbar navbar-inverse navbar-fixed-top {{navbarExpanded}}">
@@ -70,19 +92,9 @@
     </div>
     <!-- /.container -->
   </nav>
+</template>
 
-  <header style="background-image: url('/img/bg-header.jpg');">
-    <div class="intro-content">
-      <img src="/img/profile.png" class="img-responsive img-centered" alt="">
-      <div class="brand-name">Enfluence</div>
-      <hr class="alternate"/>
-      <div class="brand-name-subtext">Your health is my health</div>
-    </div>
-    <div class="scroll-down">
-      <a class="btn page-scroll" href="#why"><i class="fa fa-angle-down fa-fw"></i></a>
-    </div>
-  </header>
-
+<template name="why">
   <section id="why">
     <div class="container-fluid">
       <div class="row text-center">
@@ -97,7 +109,7 @@
           <div class="about-content">
             <i class="fa fa-magic fa-4x"></i>
             <h3>Celebrate</h3>
-            <p>Good health is like a great party, <strong>easy and fun</strong> - you can join the adventure!</p>
+            <p>Good health is like a great party, <strong>easy and fun</strong> - join the adventure!</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-12 wow fadeIn" data-wow-delay=".4s">
@@ -117,9 +129,10 @@
       </div>
     </div>
   </section>
+</template>
 
+<template name="adapt">
   <!--End mc_embed_signup-->
-
   <aside id="adapt" class="cta-quote" style="background-image: url('/img/bg-aside.jpg');">
     <div class="container wow fadeIn">
       <div class="row">
@@ -184,7 +197,9 @@
       </div>
     </div>
   </section>
+</template>
 
+<template name="experience">
   <section id="experience" class="pricing" style="background-image: url('/img/bg-pricing.jpg')">
     <div class="container wow fadeIn">
       <div class="row text-center">
@@ -344,7 +359,9 @@
       </div>
     </div>
   </section>
+</template>
 
+<template name="engage">
   <section id="engage" class="bg-gray">
     <div class="container text-center wow fadeIn">
       <h2>Insta-Health</h2>
@@ -562,121 +579,7 @@
     </div>
   </section>
 
-  <section id="connect" class="bg-gray">
-    <div class="container text-center wow fadeIn">
-      <div class="row">
-        <div class="col-lg-12">
-          <h2>The Enfluencers</h2>
-          <p>Who's making the world a better, healthier place for all?</p>
-          <hr class="colored">
-        </div>
-      </div>
-      <div class="row content-row">
-        <div class="col-lg-12">
-          <div class="about-carousel">
-            <div class="item">
-              <img src="/img/people/1.jpg" class="img-responsive" alt="">
-              <div class="caption">
-                <h3>Shawn Dimantha</h3>
-                <hr class="colored">
-                <p>CEO</p>
-                <ul class="list-inline social">
-                  <li>
-                    <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="item">
-              <img src="/img/people/2.jpg" class="img-responsive" alt="">
-              <div class="caption">
-                <h3>Paul Cuciureanu</h3>
-                <hr class="colored">
-                <p>CPO</p>
-                <ul class="list-inline social">
-                  <li>
-                    <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="item">
-              <img src="/img/people/3.jpg" class="img-responsive" alt="">
-              <div class="caption">
-                <h3>You!</h3>
-                <hr class="colored">
-                <p>Researcher / UXer</p>
-                <ul class="list-inline social">
-                  <li>
-                    <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer" style="background-image: url('/img/bg-footer.jpg')">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-md-4 contact-details">
-          <h4><i class="fa fa-phone"></i> Call</h4>
-          <p>+1 514 803 9438</p>
-        </div>
-        <div class="col-md-4 contact-details">
-          <h4><i class="fa fa-map-marker"></i> Visit</h4>
-          <p>3305 rue Sherbrooke East
-            <br>Montreal, QC &nbsp; H1W 1C3</p>
-        </div>
-        <div class="col-md-4 contact-details">
-          <h4><i class="fa fa-envelope"></i> Email</h4>
-          <p><a href="mailto:mail@example.com">hello@enfluence.io</a>
-          </p>
-        </div>
-      </div>
-      <div class="row social">
-        <div class="col-lg-12">
-          <ul class="list-inline">
-            <li><a href="https://twitter.com/EnfluenceIO"><i class="fa fa-twitter fa-fw fa-2x"></i></a></li>
-            <li><a href="https://www.facebook.com/enfluence.io"><i class="fa fa-facebook fa-fw fa-2x"></i></a></li>
-            <li><a href="https://plus.google.com/109742212581137813397/posts"><i class="fa fa-google fa-fw fa-2x"></i></a></li>
-            <li><a href="https://www.linkedin.com/company/5226203"><i class="fa fa-linkedin fa-fw fa-2x"></i></a></li>
-            <li><a href="http://pinterest.com/Enfluence"><i class="fa fa-pinterest fa-fw fa-2x"></i></a></li>
-            <li><a href="https://medium.com/@Enfluence.io"><i class="fa fa-medium fa-fw fa-2x"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="row copyright">
-        <div class="col-lg-12">
-          <p class="small">&copy; 2015, Enfluence.io Inc</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
   <!-- Portfolio Modals -->
-
   <!-- Example Modal 1 -->
   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('/img/portfolio/bg-1.jpg')">
     <div class="modal-content">
@@ -828,4 +731,121 @@
       </div>
     </div>
   </div>
+</template>
+
+<template name="connect">
+  <section id="connect" class="bg-gray">
+    <div class="container text-center wow fadeIn">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>The Enfluencers</h2>
+          <p>Who's making the world a better, healthier place for all?</p>
+          <hr class="colored">
+        </div>
+      </div>
+      <div class="row content-row">
+        <div class="col-lg-12">
+          <div class="about-carousel">
+            <div class="item">
+              <img src="/img/people/1.jpg" class="img-responsive" alt="">
+              <div class="caption">
+                <h3>Shawn Dimantha</h3>
+                <hr class="colored">
+                <p>CEO</p>
+                <ul class="list-inline social">
+                  <li>
+                    <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="item">
+              <img src="/img/people/2.jpg" class="img-responsive" alt="">
+              <div class="caption">
+                <h3>Paul Cuciureanu</h3>
+                <hr class="colored">
+                <p>CPO</p>
+                <ul class="list-inline social">
+                  <li>
+                    <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="item">
+              <img src="/img/people/3.jpg" class="img-responsive" alt="">
+              <div class="caption">
+                <h3>You!</h3>
+                <hr class="colored">
+                <p>Researcher / UXer</p>
+                <ul class="list-inline social">
+                  <li>
+                    <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<template name="footer">
+  <footer class="footer" style="background-image: url('/img/bg-footer.jpg')">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-4 contact-details">
+          <h4><i class="fa fa-phone"></i> Call</h4>
+          <p>+1 514 803 9438</p>
+        </div>
+        <div class="col-md-4 contact-details">
+          <h4><i class="fa fa-map-marker"></i> Visit</h4>
+          <p>3305 rue Sherbrooke East
+            <br>Montreal, QC &nbsp; H1W 1C3</p>
+        </div>
+        <div class="col-md-4 contact-details">
+          <h4><i class="fa fa-envelope"></i> Email</h4>
+          <p><a href="mailto:mail@example.com">hello@enfluence.io</a>
+          </p>
+        </div>
+      </div>
+      <div class="row social">
+        <div class="col-lg-12">
+          <ul class="list-inline">
+            <li><a href="https://twitter.com/EnfluenceIO"><i class="fa fa-twitter fa-fw fa-2x"></i></a></li>
+            <li><a href="https://www.facebook.com/enfluence.io"><i class="fa fa-facebook fa-fw fa-2x"></i></a></li>
+            <li><a href="https://plus.google.com/109742212581137813397/posts"><i class="fa fa-google fa-fw fa-2x"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/5226203"><i class="fa fa-linkedin fa-fw fa-2x"></i></a></li>
+            <li><a href="http://pinterest.com/Enfluence"><i class="fa fa-pinterest fa-fw fa-2x"></i></a></li>
+            <li><a href="https://medium.com/@Enfluence.io"><i class="fa fa-medium fa-fw fa-2x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row copyright">
+        <div class="col-lg-12">
+          <p class="small">&copy; 2015, Enfluence.io Inc</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </template>
