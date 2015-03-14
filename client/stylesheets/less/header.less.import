@@ -73,3 +73,9 @@ header {
 		}
   }
 }
+
+@media (min-width: 1025px) {
+  header {
+    background-attachment: fixed;
+  }
+}
