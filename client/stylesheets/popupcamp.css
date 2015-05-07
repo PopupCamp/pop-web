@@ -103,9 +103,6 @@ hr.alternate {
     margin: 20px 0 20px auto;
   }
 }
-.text-primary {
-  color: #ef4035;
-}
 .navbar-fixed-top {
   margin-bottom: 0;
 }
@@ -203,6 +200,16 @@ hr.alternate {
 .navbar .navbar-nav li a:focus {
   outline: none;
 }
+.language {
+  margin-left: 10px;
+  height: 50px;
+}
+
+.language .tap-i18n-dropdown {
+  margin-top: 7px;
+  display: inline-block;
+}
+
 aside.cta-quote {
   color: white;
   background-color: #222222;
@@ -328,69 +335,6 @@ aside.cta-quote span.quote {
 }
 .about-carousel .item {
   padding: 15px;
-}
-.about-carousel .item .caption {
-  padding: 15px;
-  color: rgba(255, 255, 255, 0.7);
-  width: 100%;
-  margin: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-.about-carousel .item .caption h3 {
-  margin: 0;
-}
-.about-carousel .item .caption hr {
-  margin: 5px auto;
-  max-width: 50px;
-}
-.about-carousel .item .caption p {
-  margin: 0;
-}
-.about-carousel .item .caption ul.social {
-  margin-top: 5px;
-}
-.about-carousel .item .caption ul.social li a {
-  color: rgba(255, 255, 255, 0.7);
-}
-.about-carousel .item .caption ul.social li a:hover,
-.about-carousel .item .caption ul.social li a:focus {
-  color: white;
-}
-.about-carousel .owl-controls {
-  margin-top: 0;
-}
-.about-carousel .owl-controls .owl-prev,
-.about-carousel .owl-controls .owl-next {
-  text-align: center;
-  position: absolute;
-  height: 60px;
-  width: 40px;
-  border-radius: 0 !important;
-  line-height: 50px;
-  font-size: 30px !important;
-  margin: auto 0 !important;
-  top: 0;
-  bottom: 0;
-  background-color: #ef4035 !important;
-  color: white !important;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.about-carousel .owl-controls .owl-prev:hover,
-.about-carousel .owl-controls .owl-next:hover {
-  opacity: 1;
-}
-.about-carousel .owl-controls .owl-prev {
-  left: 15px;
-}
-.about-carousel .owl-controls .owl-next {
-  right: 15px;
 }
 .services .media {
   margin-bottom: 30px;
@@ -899,78 +843,4 @@ footer.footer .copyright p.small {
 }
 .btn-full-width:focus {
   color: white;
-}
-body.modern {
-  font-family: "Cardo", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-}
-body.modern h1,
-body.modern h2,
-body.modern h3,
-body.modern h4,
-body.modern h5,
-body.modern h6 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-body.modern p.lead {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  text-transform: none;
-}
-body.modern .about-carousel .owl-controls .owl-prev,
-body.modern .about-carousel .owl-controls .owl-next {
-  line-height: 55px;
-}
-body.modern .portfolio-carousel .item .project-details .project-name {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-body.modern .testimonials .testimonials-carousel .item .testimonial-info .testimonial-author .name {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-body.modern .testimonials .testimonials-carousel .owl-controls .owl-prev,
-body.modern .testimonials .testimonials-carousel .owl-controls .owl-next {
-  line-height: 55px;
-}
-body.vintage {
-  font-family: "Cardo", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-}
-body.vintage h1,
-body.vintage h2,
-body.vintage h3,
-body.vintage h4,
-body.vintage h5,
-body.vintage h6 {
-  font-family: "Sanchez", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-body.vintage p.lead {
-  font-family: "Sanchez", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  text-transform: none;
-}
-body.vintage .about-carousel .owl-controls .owl-prev,
-body.vintage .about-carousel .owl-controls .owl-next {
-  line-height: 55px;
-}
-body.vintage .portfolio-carousel .item .project-details .project-name {
-  font-family: "Sanchez", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-body.vintage .testimonials .testimonials-carousel .item .testimonial-info .testimonial-author .name {
-  font-family: "Sanchez", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-body.vintage .testimonials .testimonials-carousel .owl-controls .owl-prev,
-body.vintage .testimonials .testimonials-carousel .owl-controls .owl-next {
-  line-height: 55px;
 }

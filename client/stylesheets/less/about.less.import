@@ -7,14 +7,10 @@
 		padding: 15px;
 		.caption {
 			padding: 15px;
-			color: fade(white, 70%);
+			color: fade(black, 70%);
 			width: 100%;
-			margin: auto;
-			position: absolute;
-			top: 50%; left: 50%;
-			-webkit-transform: translate(-50%,-50%);
-			-ms-transform: translate(-50%,-50%);
-			transform: translate(-50%,-50%);
+			margin: 0;
+			background-color: white;
 			h3 {
 				margin: 0;
 			}
@@ -29,10 +25,10 @@
 				margin-top: 5px;
 				li {
 					a {
-						color: fade(white, 70%);
+						color: fade(black, 50%);
 						&:hover,
 						&:focus {
-							color: white;
+							color: black;
 						}
 					}
 				}
@@ -66,5 +62,5 @@
 		.owl-next {
 			right: 15px;
 		}
-	}	
+	}
 }
