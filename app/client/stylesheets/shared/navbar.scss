@@ -8,13 +8,13 @@
 .navbar-inverse .navbar-nav>.active>a,
 .navbar-inverse .navbar-nav>.active>a:hover,
 .navbar-inverse .navbar-nav>.active>a:focus {
-  color: @themePrimary;
+  color: $themePrimary;
   background-color: white;
   border-radius: 0;
 }
 
 .navbar-default {
-  background-color: @themePrimary;
+  background-color: $themePrimary;
   .navbar-toggle {
     .icon-bar {
       background-color: white;
@@ -31,7 +31,7 @@
 }
 
 .navbar-inverse {
-  background-color: @themeDark;
+  background-color: $themeDark;
 }
 
 .navbar-default,
@@ -43,10 +43,13 @@
     color: white;
     opacity: 1;
     text-decoration: none;
-    .transition-all;
+    @include transition-all;
     &:hover,
     &:focus {
       opacity: 1;
+    }
+    img {
+      max-height: 50px;
     }
   }
   .navbar-nav {
@@ -69,10 +72,10 @@
   .navbar-inverse .navbar-nav>.active>a:hover,
   .navbar-inverse .navbar-nav>.active>a:focus {
     border-radius: 5px;
-  }  
+  }
   .navbar-fixed-top.navbar-expanded {
-        padding: 30px 0;    
-  }  
+        padding: 30px 0;
+  }
     .navbar-fixed-top {
         padding: 15px 0;
         -webkit-transition: padding 0.5s;
@@ -82,7 +85,7 @@
           &:hover {
             opacity: 0.5;
           }
-      }        
+      }
     }
   .navbar-default.navbar-expanded,
   .navbar-inverse.navbar-expanded {

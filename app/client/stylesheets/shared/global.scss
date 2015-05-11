@@ -1,6 +1,4 @@
-
-html,
-body {
+html, body {
   height: 100%;
 }
 
@@ -27,5 +25,5 @@ section.bg-gray {
 }
 
 .owl-theme .owl-controls .owl-page span {
-  background: fade(@themeDark, 50%);
+  background: fade($themeDark, 50%);
 }

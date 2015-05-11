@@ -1,16 +1,16 @@
 .pricing {
   color: white;
-  background-color: @themeDark;
-  background: no-repeat center center scroll; 
-  .background-cover;
+  background-color: $themeDark;
+  background: no-repeat center center scroll;
+  @include background-cover;
   .pricing-item {
     text-align: center;
     background: white;
-    color: @themeDark;
+    color: $themeDark;
     padding: 30px;
-    -webkit-box-shadow: 0px 0px 30px 5px fade(@themeDark, 75%);
-    -moz-box-shadow: 0px 0px 30px 5px fade(@themeDark, 75%);
-    box-shadow: 0px 0px 30px 5px fade(@themeDark, 75%);
+    -webkit-box-shadow: 0px 0px 30px 5px fade($themeDark, 75%);
+    -moz-box-shadow: 0px 0px 30px 5px fade($themeDark, 75%);
+    box-shadow: 0px 0px 30px 5px fade($themeDark, 75%);
     z-index: 1;
     margin-bottom: 30px;
     h3 {
@@ -37,7 +37,7 @@
 
 @media(min-width:992px) {
   .pricing {
-    background-attachment: scroll; 
+    background-attachment: scroll;
     .pricing-item {
       margin-bottom: 0;
     }

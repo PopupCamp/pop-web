@@ -3,10 +3,10 @@ header {
   display: block;
   height: auto;
   width: auto;
-  background-color: @themeDark;
+  background-color: $themeDark;
   background: no-repeat center center;
   background-attachment: scroll;
-  .background-cover;
+  @include background-cover;
   padding: 100px 0;
   .intro-content {
     color: white;
@@ -14,7 +14,7 @@ header {
     position: relative;
   }
   .brand-name {
-    .heading-font;
+    @include heading-font;
     color: white;
     font-size: 55px;
     line-height: 55px;
@@ -47,7 +47,7 @@ header {
       letter-spacing: normal;
       color: white;
       font-size: 30px;
-      .transition-all;
+      @include transition-all;
       &:hover {
         color: fade(white, 50%);
         border-color: fade(white, 50%);

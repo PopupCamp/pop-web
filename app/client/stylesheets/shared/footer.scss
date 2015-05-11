@@ -1,14 +1,14 @@
 footer.footer {
   color: fade(white, 70%);
   background: no-repeat center center scroll;
-  .background-cover;
+  @include background-cover;
   padding: 50px 0 20px;
   a {
     color: fade(white, 70%);
     &:hover {
       color: white;
     }
-  }  
+  }
   p {
     font-size: 22px;
   }

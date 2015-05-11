@@ -1,8 +1,8 @@
 aside.cta-quote {
   color: white;
-  background-color: @themeDark;
+  background-color: $themeDark;
   background: no-repeat center center scroll;
-  .background-cover;
+  @include background-cover;
   padding: 100px 0;
   text-align: center;
   span.quote {
@@ -59,7 +59,7 @@ aside.cta-quote {
         .testimonial-author {
           display: inline-block;
           .name {
-            .heading-font;
+            @include heading-font;
           }
           hr.colored {
             margin: 3px auto;
@@ -89,9 +89,9 @@ aside.cta-quote {
         margin: auto 0 !important;
         top: 0;
         bottom: 0;
-        background-color: @themePrimary !important;
+        background-color: $themePrimary !important;
         color: white !important;
-        .transition-all;
+        @include transition-all;
         &:hover {
           opacity: 1;
         }

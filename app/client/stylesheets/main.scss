@@ -1,0 +1,22 @@
+/*****************************************************************************/
+/* main: Style */
+/*****************************************************************************/
+@import "client/stylesheets/shared/variables.scss";
+@import "client/stylesheets/shared/mixins.scss";
+@import "client/stylesheets/shared/typography.scss";
+
+@import "client/stylesheets/shared/about.scss";
+@import "client/stylesheets/shared/asides.scss";
+@import "client/stylesheets/shared/buttons.scss";
+@import "client/stylesheets/shared/contact.scss";
+@import "client/stylesheets/shared/footer.scss";
+@import "client/stylesheets/shared/global.scss";
+@import "client/stylesheets/shared/header.scss";
+@import "client/stylesheets/shared/navbar.scss";
+@import "client/stylesheets/shared/portfolio.scss";
+@import "client/stylesheets/shared/pricing.scss";
+@import "client/stylesheets/shared/services.scss";
+
+@import "client/templates/events/startupfest/startupfest.scss";
+
+@import "client/stylesheets/less/typography.scss";

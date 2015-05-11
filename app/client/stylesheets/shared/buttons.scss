@@ -2,25 +2,25 @@
   color: white;
   border: 1px solid white;
   background: transparent;
-  .transition-all;
+  @include transition-all;
   &:hover,
   &:focus {
-    color: @themePrimary;
+    color: $themePrimary;
     background: white;
     outline: none;
   }
 }
 
 .btn-outline-dark {
-  color: @themeDark;
-  border: 1px solid @themeDark;
+  color: $themeDark;
+  border: 1px solid $themeDark;
   background: transparent;
-  .transition-all;
+  @include transition-all;
   &:hover,
   &:focus {
     color: white;
-    background: @themePrimary;
-    border-color: @themePrimary;
+    background: $themePrimary;
+    border-color: $themePrimary;
     outline: none;
   }
 }
@@ -42,7 +42,7 @@
 .btn-full-width {
   border: 0;
   border-radius: 0;
-  background-color: @themeDark;
+  background-color: $themeDark;
   color: white;
   padding: 50px 0;
   font-size: 26px;
@@ -50,7 +50,7 @@
   letter-spacing: normal;
   text-transform: none;
   &:hover {
-    background-color: @themePrimary;
+    background-color: $themePrimary;
     color: white;
   }
   &:focus {
