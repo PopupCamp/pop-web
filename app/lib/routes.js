@@ -10,3 +10,17 @@ Router.route('/', {
   action: 'action',
   where: 'client'
 });
+
+Router.route('events', {
+  name: 'events',
+  controller: 'EventsController',
+  action: 'action',
+  where: 'client'
+});
+
+Router.route('events/startupfest', {
+  name: 'startupfest',
+  controller: 'StartupFestController',
+  action: 'action',
+  where: 'client'
+});

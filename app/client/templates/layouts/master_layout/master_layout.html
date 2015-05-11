@@ -1,3 +1,7 @@
 <template name="MasterLayout">
-  {{> yield}}
+  <div id="wrapper">
+    {{> Navigation}}
+    {{> yield}}
+    {{> Footer}}
+  </div>
 </template>

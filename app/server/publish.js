@@ -3,3 +3,8 @@
  *  this.ready();
  * });
  */
+
+
+Meteor.publish('events', function (/* args */) {
+  return Events.find();
+});
