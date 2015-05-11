@@ -1,76 +1,76 @@
 header {
-	position: relative;
-	display: block;
-	height: auto;
-	width: auto;
-	background-color: @themeDark;
-	background: no-repeat center center;
-	background-attachment: scroll;
-	.background-cover;
-	padding: 100px 0;
-	.intro-content {
-		color: white;
-		text-align: center;
-		position: relative;
-	}
-	.brand-name {
-		.heading-font;
-		color: white;
-		font-size: 55px;
-		line-height: 55px;
-		text-transform: uppercase;
-		font-weight: 900;
-		margin-top: 15px;
-	}
-	.brand-name-subtext {
-		color: white;
-		font-size: 20px;
-		line-height: 20px;
-		font-weight: 300;
-	}
-	img {
-		max-width: 150px;
-		max-height: 150px;
-	}
-	.scroll-down {
-		position: absolute;
-		width: 100%;
-		bottom: 20px;
-		text-align: center;
-		.btn {
-			height: 50px;
-			width: 50px;
-			border: 2px solid white;
-			border-radius: 100%;
-			line-height: 50px;
-			padding: 0;
-			letter-spacing: normal;
-			color: white;
-			font-size: 30px;
-			.transition-all;
-			&:hover {
-				color: fade(white, 50%);
-				border-color: fade(white, 50%);
-				outline: none;
-			}
-		}
-	}
+  position: relative;
+  display: block;
+  height: auto;
+  width: auto;
+  background-color: @themeDark;
+  background: no-repeat center center;
+  background-attachment: scroll;
+  .background-cover;
+  padding: 100px 0;
+  .intro-content {
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  .brand-name {
+    .heading-font;
+    color: white;
+    font-size: 55px;
+    line-height: 55px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 15px;
+  }
+  .brand-name-subtext {
+    color: white;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 300;
+  }
+  img {
+    max-width: 150px;
+    max-height: 150px;
+  }
+  .scroll-down {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    text-align: center;
+    .btn {
+      height: 50px;
+      width: 50px;
+      border: 2px solid white;
+      border-radius: 100%;
+      line-height: 50px;
+      padding: 0;
+      letter-spacing: normal;
+      color: white;
+      font-size: 30px;
+      .transition-all;
+      &:hover {
+        color: fade(white, 50%);
+        border-color: fade(white, 50%);
+        outline: none;
+      }
+    }
+  }
 }
 
 @media(min-width:768px) {
-	header {
-		.brand-name {
-			font-size: 80px;
-			line-height: 80px;
-		}
-		.brand-name-subtext {
-			font-size: 30px;
-			line-height: 30px;
-		}
-		img {
-			max-width: 300px;
-			max-height: 300px;
-		}
+  header {
+    .brand-name {
+      font-size: 80px;
+      line-height: 80px;
+    }
+    .brand-name-subtext {
+      font-size: 30px;
+      line-height: 30px;
+    }
+    img {
+      max-width: 300px;
+      max-height: 300px;
+    }
   }
 }
 

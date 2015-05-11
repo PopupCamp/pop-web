@@ -1,15 +1,15 @@
 
 html,
 body {
-	height: 100%;
+  height: 100%;
 }
 
 .img-centered {
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
 .content-row {
-	margin-top: 30px;
+  margin-top: 30px;
 }
 
 section {
@@ -17,15 +17,15 @@ section {
 }
 
 section.bg-gray {
-	background-color: darken(white, 4%)
+  background-color: darken(white, 4%)
 }
 
 @media(max-width:767px) {
-	section {
-		padding: 75px 0;
-	}
+  section {
+    padding: 75px 0;
+  }
 }
 
 .owl-theme .owl-controls .owl-page span {
-	background: fade(@themeDark, 50%);
+  background: fade(@themeDark, 50%);
 }

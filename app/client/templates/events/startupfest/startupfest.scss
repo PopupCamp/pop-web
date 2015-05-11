@@ -1,0 +1,22 @@
+/*****************************************************************************/
+/* Startupfest: Style */
+/*****************************************************************************/
+.startupfest {
+}
+
+table.schedule {
+  max-width: 700px;
+  tr {
+    th, td {
+      padding: 7px;
+      border: 2px solid white;
+    }
+    th {
+      background-color: #03C6FD;
+      color: white;
+    }
+    td {
+      background-color: rgba(3, 198, 253, 0.2);
+    }
+  }
+}
