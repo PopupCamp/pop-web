@@ -4,11 +4,15 @@ Router.configure({
   notFoundTemplate: 'NotFound'
 });
 
-Router.route('/', {
+Router.route('home', {
   name: 'home',
   controller: 'HomeController',
   action: 'action',
   where: 'client'
+});
+
+Router.route('/', function () {
+  this.redirect('/home');
 });
 
 Router.route('events', {
