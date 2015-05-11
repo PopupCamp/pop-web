@@ -8,7 +8,7 @@
 .navbar-inverse .navbar-nav>.active>a,
 .navbar-inverse .navbar-nav>.active>a:hover,
 .navbar-inverse .navbar-nav>.active>a:focus {
-  color: $themePrimary;
+  color: lighten(black, 30%);
   background-color: white;
   border-radius: 0;
 }
@@ -22,11 +22,11 @@
   }
   .navbar-toggle:hover,
   .navbar-toggle:focus {
-      background-color: fade(white, 50%);
+      background-color: darken(white, 50%);
   }
   .navbar-collapse,
   .navbar-form {
-    border-color: fade(white, 50%);
+    border-color: darken(white, 50%);
   }
 }
 
@@ -37,7 +37,7 @@
 .navbar-default,
 .navbar-inverse {
   border: none;
-  border-bottom: 1px solid fade(white, 10%);
+  border-bottom: 1px solid lighten(black, 15%);
   .navbar-brand {
     padding: 0 15px;
     color: white;
@@ -57,7 +57,7 @@
       a {
         color: white;
         &:hover {
-          color: fade(white, 50%)
+          color: darken(white, 50%)
         }
       }
     }

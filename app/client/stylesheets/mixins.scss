@@ -12,15 +12,15 @@
 }
 
 @mixin sans-serif-font() {
-  font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @mixin serif-font() {
-    font-family: "Cardo","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Cardo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @mixin heading-font() {
-  font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900;
   text-transform: uppercase;
   color: #FED136;

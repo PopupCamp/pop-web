@@ -25,5 +25,5 @@ section.bg-gray {
 }
 
 .owl-theme .owl-controls .owl-page span {
-  background: fade($themeDark, 50%);
+  background: darken($themeDark, 50%);
 }

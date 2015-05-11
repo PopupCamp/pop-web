@@ -10,7 +10,7 @@
     padding: 15px;
     .caption {
       padding: 15px;
-      color: fade(black, 70%);
+      color: lighten(black, 70%);
       width: 100%;
       margin: 0;
       background-color: white;
@@ -26,15 +26,6 @@
       }
       ul.social {
         margin-top: 5px;
-        li {
-          a {
-            color: fade(black, 50%);
-            &:hover,
-            &:focus {
-              color: black;
-            }
-          }
-        }
       }
     }
   }

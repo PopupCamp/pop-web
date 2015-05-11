@@ -11,9 +11,9 @@
     background: white;
     color: $themeDark;
     padding: 30px;
-    -webkit-box-shadow: 0px 0px 30px 5px fade($themeDark, 75%);
-    -moz-box-shadow: 0px 0px 30px 5px fade($themeDark, 75%);
-    box-shadow: 0px 0px 30px 5px fade($themeDark, 75%);
+    -webkit-box-shadow: 0px 0px 30px 5px lighten($themeDark, 75%);
+    -moz-box-shadow: 0px 0px 30px 5px lighten($themeDark, 75%);
+    box-shadow: 0px 0px 30px 5px lighten($themeDark, 75%);
     z-index: 1;
     margin-bottom: 30px;
     h3 {

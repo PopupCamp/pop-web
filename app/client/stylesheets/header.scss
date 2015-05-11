@@ -49,8 +49,8 @@ header {
       font-size: 30px;
       @include transition-all;
       &:hover {
-        color: fade(white, 50%);
-        border-color: fade(white, 50%);
+        color: darken(white, 50%);
+        border-color: darken(white, 50%);
         outline: none;
       }
     }
