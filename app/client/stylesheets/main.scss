@@ -1,22 +1,22 @@
 /*****************************************************************************/
 /* main: Style */
 /*****************************************************************************/
-@import "client/stylesheets/shared/variables.scss";
-@import "client/stylesheets/shared/mixins.scss";
-@import "client/stylesheets/shared/typography.scss";
+@import "client/stylesheets/variables.scss";
+@import "client/stylesheets/mixins.scss";
+@import "client/stylesheets/typography.scss";
 
-@import "client/stylesheets/shared/about.scss";
-@import "client/stylesheets/shared/asides.scss";
-@import "client/stylesheets/shared/buttons.scss";
-@import "client/stylesheets/shared/contact.scss";
-@import "client/stylesheets/shared/footer.scss";
-@import "client/stylesheets/shared/global.scss";
-@import "client/stylesheets/shared/header.scss";
-@import "client/stylesheets/shared/navbar.scss";
-@import "client/stylesheets/shared/portfolio.scss";
-@import "client/stylesheets/shared/pricing.scss";
-@import "client/stylesheets/shared/services.scss";
+@import "client/stylesheets/buttons.scss";
+@import "client/stylesheets/global.scss";
+@import "client/stylesheets/header.scss";
 
 @import "client/templates/events/startupfest/startupfest.scss";
-
+@import "client/templates/home/about/about.scss";
+@import "client/templates/home/contact/contact.scss";
+@import "client/templates/home/portfolio/portfolio.scss";
+@import "client/templates/home/pricing/pricing.scss";
+@import "client/templates/home/services/services.scss";
+@import "client/templates/shared/asides/asides.scss";
+@import "client/templates/shared/footer/footer.scss";
+@import "client/templates/shared/header/header.scss";
+@import "client/templates/shared/navigation/navigation.scss";
 @import "client/templates/sponsors/sponsors.scss";
