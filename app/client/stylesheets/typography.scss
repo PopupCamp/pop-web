@@ -73,5 +73,5 @@ hr.colored {
 }
 
 .text-primary {
-  color: $themePrimary;
+  color: lighten($themePrimary, 15%);
 }
