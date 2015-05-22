@@ -23,15 +23,17 @@
             <a class="page-scroll" href="{{notHomeRoute}}#page-top"></a>
           </li>
           <li>
-            <a class="page-scroll" href="{{notHomeRoute}}#why">Why</a>
+            <a class="page-scroll" href="{{notHomeRoute}}#welcome">Welcome</a>
           </li>
-          <li class="{{active '/events/startupfest'}}">
-            {{#linkTo route='startupfest'}}
-              Startup Fest 2015
+          <li class="{{active '/parents'}}">
+            {{#linkTo route='parents'}}
+              Parents
             {{/linkTo}}
           </li>
-          <li>
-            <a class="page-scroll" href="{{notHomeRoute}}#connect">Connect</a>
+          <li class="{{active '/organizers'}}">
+            {{#linkTo route='organizers'}}
+              Organizers
+            {{/linkTo}}
           </li>
           <li class="language">
             {{> i18n_dropdown}}
