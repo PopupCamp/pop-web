@@ -1,19 +1,28 @@
 <template name="Home">
   <header style="background-image: url('/img/bg-header.jpg');">
-    <div class="intro-content">
-      <img src="/img/profile.png" class="img-responsive img-centered" alt="">
-      <div class="brand-name">Popup Camp</div>
-      <hr class="alternate"/>
+    <div class="container intro-content">
+      <img src="/img/profile.png" class="img-responsive img-centered" alt="PopupCamp Logo">
       <div class="brand-name-subtext">{{_ "main-value-prop"}}</div>
       <div class="row text-center">
-        <div class="col-xs-6">
-          <button type="button" class="btn btn-default btn-lg">
-            Parents
+        <div class="col-sm-4">
+          <h3 class="value-proposition">Simple</h3>
+        </div>
+        <div class="col-sm-4">
+          <h3 class="value-proposition">Sécuritaire</h3>
+        </div>
+        <div class="col-sm-4">
+          <h3 class="value-proposition">Inclusive</h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-sm-6">
+          <button type="button" class="btn btn-primary btn-lg parent">
+            I'm a Parent
           </button>
         </div>
-        <div class="col-xs-6">
-          <button type="button" class="btn btn-default btn-lg">
-            Organizers
+        <div class="col-sm-6">
+          <button type="button" class="btn btn-default btn-lg organizer">
+            I'm an Organizer
           </button>
         </div>
       </div>

@@ -12,21 +12,18 @@ header {
     color: white;
     text-align: center;
     position: relative;
-  }
-  .brand-name {
-    @include heading-font;
-    color: white;
-    font-size: 55px;
-    line-height: 55px;
-    text-transform: uppercase;
-    font-weight: 900;
-    margin-top: 15px;
+    max-width: 700px;
   }
   .brand-name-subtext {
     color: white;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 2em;
     font-weight: 300;
+    margin-top: 40px;
+  }
+  h3.value-proposition {
+    @include heading-font;
+    font-style: italic;
   }
   img {
     max-width: 150px;
@@ -59,13 +56,14 @@ header {
 
 @media(min-width:768px) {
   header {
-    .brand-name {
-      font-size: 80px;
-      line-height: 80px;
-    }
     .brand-name-subtext {
       font-size: 30px;
-      line-height: 30px;
+      line-height: 2em;
+      margin-top: 40px;
+    }
+    h3.value-proposition {
+      @include heading-font;
+      font-style: italic;
     }
     img {
       max-width: 300px;
