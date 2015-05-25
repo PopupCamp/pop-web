@@ -17,7 +17,7 @@
   }
   value-proposition {
     display: inline;
-    font-size: 48px;
+    font-size: 52px;
   }
 }
 
@@ -25,6 +25,10 @@
   .item {
     padding: 15px;
     .caption {
+      user-select: all;
+      -moz-user-select: all;
+      -webkit-user-select: all;
+      -ms-user-select: all;
       padding: 15px;
       color: lighten(black, 70%);
       width: 100%;
@@ -39,8 +43,18 @@
       }
       p {
         margin: 0;
+        .role {
+          color: lighten(black, 30%);
+        }
       }
       ul.social {
+        margin-top: 5px;
+      }
+      ul.phone {
+        user-select: all;
+        -moz-user-select: all;
+        -webkit-user-select: all;
+        -ms-user-select: all;
         margin-top: 5px;
       }
     }
