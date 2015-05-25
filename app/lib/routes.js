@@ -23,7 +23,7 @@ Router.route('events', {
 });
 
 Router.route('events/startupfest', {
-  name: 'startupfest',
+  name: 'events/startupfest',
   controller: 'StartupFestController',
   action: 'action',
   where: 'client'
