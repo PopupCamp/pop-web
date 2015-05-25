@@ -20,8 +20,8 @@ p {
 }
 
 p.lead {
-  @include heading-font;
-  font-size: 24px;
+  font-style: italic;
+  font-size: 28px;
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -6,10 +6,11 @@
 
 meteor-platform
 coffeescript
+twbs:bootstrap
 fourseven:scss
 iron:router
+okgrow:iron-router-autoscroll
 less
-twbs:bootstrap
 gabrielengel:konecty-magnific-popup
 mrt:jquery-easing
 iamkevingreen:mixitup
@@ -18,4 +19,3 @@ sewdn:codrops-buttons
 natestrauser:font-awesome
 tap:i18n
 tap:i18n-ui
-okgrow:iron-router-autoscroll

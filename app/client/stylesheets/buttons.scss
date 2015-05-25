@@ -33,6 +33,15 @@
   letter-spacing: 1px;
 }
 
+.btn-xlg {
+  padding: 18px 30px;
+  font-size: 30px;
+  line-height: normal;
+  -webkit-border-radius: 12px;
+     -moz-border-radius: 12px;
+          border-radius: 12px;
+}
+
 .btn:focus,
 .btn:active,
 .btn.active {
