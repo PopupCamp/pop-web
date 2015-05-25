@@ -21,10 +21,6 @@ header {
     font-weight: 300;
     margin-top: 40px;
   }
-  h3.value-proposition {
-    @include heading-font;
-    font-style: italic;
-  }
   img {
     max-width: 150px;
     max-height: 150px;
@@ -32,6 +28,7 @@ header {
   .scroll-down {
     position: absolute;
     width: 100%;
+    margin: 20px 0;
     bottom: 20px;
     text-align: center;
     .btn {
@@ -63,7 +60,6 @@ header {
     }
     h3.value-proposition {
       @include heading-font;
-      font-style: italic;
     }
     img {
       max-width: 300px;

@@ -2,7 +2,19 @@
 /* About: Style */
 /*****************************************************************************/
 .about-content {
+  text-align: center;
   padding: 30px;
+  .fa-stack.fa-4x {
+    margin: auto;
+    display: block;
+  }
+  .badge {
+    margin-right: 5px;
+  }
+  h3 {
+    vertical-align: middle;
+    display: inline-block;
+  }
 }
 
 .about-carousel {
