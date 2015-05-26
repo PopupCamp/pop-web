@@ -1,22 +1,37 @@
 <template name="Events">
   <section id="events">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row text-center">
         <div class="col-lg-12 wow fadeIn">
-          <h1>Upcomming Events</h1>
+          <h1>{{_ "upcoming-events"}}</h1>
           <ul>
             <li>
+              {{_ "event-fem-int-9-June"}}
+            </li>
+            <li>
               {{#linkTo route='events/startupfest'}}
-                Startupfest 2015, July 15-18
+                {{_ "event-startupfest-16-17-July"}}
               {{/linkTo}}
             </li>
           </ul>
         </div>
         <div class="col-lg-12 wow fadeIn">
-          <h1>Past Events</h1>
+          <h1>{{_ "past-events"}}</h1>
           <ul>
             <li>
-              DokStation Christmas Party, Dec 20th, 2014
+              {{_ "event-grosses-tete-agency-anniversary"}}
+            </li>
+            <li>
+              {{_ "event-dok-station-christmas-party"}}
+            </li>
+            <li>
+              {{_ "event-socent-ii-notman-house"}}
+            </li>
+            <li>
+              {{_ "event-metissage-entrepreneurial-fair"}}
+            </li>
+            <li>
+              {{_ "event-48h-entrepreneurs-rjccq-jccm"}}
             </li>
           </ul>
         </div>
