@@ -1,4 +1,8 @@
 {
+  "welcome": "Welcome",
+  "parents": "Parents",
+  "organizers": "Organizers",
+  "events": "Events",
   "main-value-prop": "Mobile Child Care for Events",
   "vp-simple": "Simple",
   "vp-safe": "Safe",
