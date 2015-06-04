@@ -2,6 +2,12 @@
 /* Home: Event Handlers */
 /*****************************************************************************/
 Template.Home.events({
+  "click .parent": function () {
+    Router.go('parents');
+  },
+  "click .organizer": function () {
+    Router.go('organizers');
+  }
 });
 
 /*****************************************************************************/
