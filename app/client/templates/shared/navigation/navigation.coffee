@@ -4,7 +4,6 @@ Template.Navigation.events {}
 # Navigation: Helpers
 Template.Navigation.helpers {
   active: (path) ->
-    console.log Router.current().url
     (if Router.current().url is path then "active" else "")
 }
 
