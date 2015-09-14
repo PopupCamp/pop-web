@@ -21,3 +21,7 @@ tap:i18n
 tap:i18n-ui
 reywood:iron-router-ga
 spiderable
+fortawesome:fontawesome
+orionjs:core
+orionjs:bootstrap
+accounts-password
