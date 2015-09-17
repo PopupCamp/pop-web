@@ -7,6 +7,10 @@ Template.Home.events({
   },
   "click .organizer": function () {
     Router.go('organizers');
+  },
+  "click .crowdfunding": function () {
+    var win = window.open("http://www.ulule.com/popupcamp/", '_blank');
+    win.focus();
   }
 });
 
