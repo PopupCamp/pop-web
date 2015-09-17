@@ -40,9 +40,11 @@
               {{_ "events"}}
             {{/linkTo}}
           </li>
-          <!-- <li>
-            {{> atNavButton}}
-          </li> -->
+          <li class="{{active '/blog'}}">
+            {{#linkTo route='blogIndex'}}
+              Blog
+            {{/linkTo}}
+          </li>
           <li class="language">
             {{> i18n_dropdown}}
           </li>
