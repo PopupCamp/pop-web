@@ -1,3 +1,7 @@
+Blog.config
+  adminRole: 'blogAdmin'
+  authorRole: 'blogAuthor'
+
 bootstrapUsers = ->
   users = Meteor.users.find(emails:
     $elemMatch:
@@ -5,7 +9,8 @@ bootstrapUsers = ->
         $in: [ "gen.begin@popupcamp.com", "paulcu@gmail.com", "melyan.vezina@popupcamp.com" ]
   )
   users.forEach (user) ->
-    Roles.addUserToRoles user._id, ["admin"] unless Roles.userHasRole(user._id, "admin")
+    Roles.addUsersToRoles(user._id, ['blogAdmin'])
+
   return Meteor.users.findOne(emails:
     $elemMatch:
       address: "paulcu@gmail.com"

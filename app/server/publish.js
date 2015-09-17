@@ -8,3 +8,7 @@
 Meteor.publish('events', function (/* args */) {
   return Events.find();
 });
+
+Meteor.publish(null, function (){
+  return Meteor.roles.find({})
+})

@@ -1,3 +1,5 @@
+
+
 Meteor.startup ->
   # SEO.config
   #   title: "Popup Camp"

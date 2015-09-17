@@ -12,11 +12,7 @@ Router.onBeforeAction (->
 ),
   only: [ "profile" ]
 
-Router.route "/login", (->
-  @layout ReactiveTemplates.get("outAdminLayout")
-  @render ReactiveTemplates.get("login")
-),
-  name: "login"
+AccountsTemplates.configureRoute('signIn');
 
 Router.route "home",
   name: "home"
