@@ -1,8 +1,6 @@
 Blog.config
   adminRole: 'blogAdmin'
   authorRole: 'blogAuthor'
-  comments:
-    disqusShortname: 'popupcamp'
 
 bootstrapUsers = ->
   users = Meteor.users.find(emails:

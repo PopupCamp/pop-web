@@ -1,3 +1,7 @@
+Blog.config
+  comments:
+    disqusShortname: 'popupcamp'
+
 ShareIt.configure({
   sites: {
     'facebook': {
