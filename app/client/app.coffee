@@ -12,7 +12,7 @@ Meteor.startup ->
     console.log error_message
 
   SEO.config
-    title: "Popup Camp"
+    title: "PopupCamp"
     meta:
       description: "Halte-garderie mobile événementielle / Mobile Child Care Services for Events"
     og:
