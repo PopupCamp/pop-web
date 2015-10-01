@@ -6,15 +6,28 @@
           <h1>{{_ "upcoming-events"}}</h1>
           <ul>
             <li>
-              {{#linkTo route='events/startupfest'}}
-                {{_ "event-startupfest-16-17-July"}}
-              {{/linkTo}}
+              <a href="http://bootcamp.centremagnetique.ca/">
+                {{_ "centre-magnetique-oct-9"}}
+              </a>
+            </li>
+            <li>
+              <a href="https://www.eventbrite.ca/e/lancement-officiel-de-popupcamp-tickets-18677258182">
+                {{_ "popupcamp-launch-oct-23"}}
+              </a>
+            </li>
+            <li>
+              {{_ "desjardins-hh-innovation-challenge-nov-6-8"}}
             </li>
           </ul>
         </div>
         <div class="col-lg-12 wow fadeIn">
           <h1>{{_ "past-events"}}</h1>
           <ul>
+            <li>
+              {{#linkTo route='events/startupfest'}}
+                {{_ "event-startupfest-16-17-July"}}
+              {{/linkTo}}
+            </li>
             <li>
               <a href="http://www.artdevivremtl.ca/">
                 {{_ "event-yoga-aol-2015"}}
