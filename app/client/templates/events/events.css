@@ -1,5 +1,14 @@
 /*****************************************************************************/
 /* Events: Style */
 /*****************************************************************************/
-.events {
+ul.events {
+  list-style-type: none;
+}
+
+ul.events a {
+  color: #03C6FD;
+}
+
+ul.events a:hover {
+  text-decoration: underline;
 }
