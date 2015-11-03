@@ -2,9 +2,19 @@
   <header style="background-image: url('/img/bg-header.jpg');">
     <div class="container intro-content">
       <img src="/img/profile.png" class="img-responsive img-centered" alt="PopupCamp Logo">
-      <button type="button" class="btn btn-primary btn-xlg crowdfunding">
-        {{_ "crowdfunding-button"}}
-      </button>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="plogue">
+            <a href="http://bureaudeplogue.ca/fr/accueil" target="_blank">
+              <img src="/img/blog/plogue.png" class="img-responsive img-centered" alt="Plogue Logo">
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-8 plogue-text">
+          <h3>{{_ "week-choice"}}</h3>
+          <p><a href="http://bureaudeplogue.ca/fr/accueil" target="_blank">{{_ "week-choice-description"}}</a></p>
+        </div>
+      </div>
       <div class="brand-name-subtext">{{_ "main-value-prop"}}</div>
       <div class="row text-center">
         <div class="col-sm-12">
