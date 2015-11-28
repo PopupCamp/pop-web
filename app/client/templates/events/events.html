@@ -6,6 +6,29 @@
           <h1>{{_ "upcoming-events"}}</h1>
           <ul class="events">
             <li>
+              {{_ "event-dok-station-christmas-party-2015"}}
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-12 wow fadeIn">
+          <h1>{{_ "past-events"}}</h1>
+          <ul class="events">
+            <li>
+              {{#if i18n_isCurrentLanguage 'en'}}
+                <a href="http://www.ymcaquebec.org/en/Blog/Baby-work-sleep-and-changing-the-world">
+                  {{_ "baby-work-sleep-change"}}
+                </a>
+              {{/if}}
+              {{#if i18n_isCurrentLanguage 'fr'}}
+                <a href="http://www.ymcaquebec.org/fr/Blogue-Du-Y/Bebe-boulot-dodo-changer-le-monde">
+                  {{_ "baby-work-sleep-change"}}
+                </a>
+              {{/if}}
+            </li>
+            <li>
+              {{_ "hec-ideos-esplanade"}}
+            </li>
+            <li>
               {{_ "hec-mba-bbq-networking"}}
             </li>
             <li>
@@ -13,14 +36,6 @@
                 {{_ "l-esplanade-launch-party"}}
               </a>
             </li>
-            <li>
-              {{_ "hec-ideos-esplanade"}}
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-12 wow fadeIn">
-          <h1>{{_ "past-events"}}</h1>
-          <ul class="events">
             <li>
               <a href="http://ocpm.qc.ca/">
                 {{_ "ocpm-nov-21"}}
@@ -34,6 +49,11 @@
             <li>
               <a href="http://defi-innovation-sante.org/">
                 {{_ "desjardins-hh-innovation-challenge-nov-6-8"}}
+              </a>
+            </li>
+            <li>
+              <a href="http://salonfemininpluriel.com/2015/10/31/popup-camp/">
+                {{_ "salon-feminin-pluriel"}}
               </a>
             </li>
             <li>
