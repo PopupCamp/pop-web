@@ -6,13 +6,33 @@
           <h1>{{_ "upcoming-events"}}</h1>
           <ul class="events">
             <li>
-              {{_ "event-dok-station-christmas-party-2015"}}
+              {{#if i18n_isCurrentLanguage 'en'}}
+                <a href="http://www.salonvr.com/en/montreal-rv-show.html">
+                  {{_ "mtl-rv-show"}}
+                </a>
+              {{/if}}
+              {{#if i18n_isCurrentLanguage 'fr'}}
+                <a href="http://www.salonvr.com/salon-vr-montreal.html">
+                  {{_ "mtl-rv-show"}}
+                </a>
+              {{/if}}
             </li>
           </ul>
         </div>
         <div class="col-lg-12 wow fadeIn">
           <h1>{{_ "past-events"}}</h1>
           <ul class="events">
+            <li>
+              <a href="http://redaq.ca/journee-conference-leducation-autrement-2e-edition/">
+                {{_ "redaq-adeese-conference"}}
+              </a>
+            </li>
+            <li>
+              {{_ "event-dok-station-christmas-party-2015"}}
+            </li>
+            <li>
+              {{_ "evenko-avatar"}}
+            </li>
             <li>
               {{#if i18n_isCurrentLanguage 'en'}}
                 <a href="http://www.ymcaquebec.org/en/Blog/Baby-work-sleep-and-changing-the-world">
