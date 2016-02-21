@@ -18,6 +18,10 @@ section.bg-gray {
   background-color: darken(white, 4%)
 }
 
+section.bg-light-gray {
+  background-color: darken(white, 2%)
+}
+
 @media(max-width:767px) {
   section {
     padding: 75px 0;
